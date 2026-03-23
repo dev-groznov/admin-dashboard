@@ -53,9 +53,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto';
 }
 
-li {
-  list-style-type: none;
-  padding: 0;
+a {
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
 }
 
 img {
@@ -98,13 +99,13 @@ img {
   align-self: center;
 }
 
-.logo > p {
+.logo > a {
   font-weight: bolder;
   font-size: 1.8rem;
 }
 
-.sidebar-main-list > p,
-.sidebar-secondary-list  > p {
+.sidebar-main-list > a,
+.sidebar-secondary-list  > a {
   font-size: 1.2rem;
 }
 
