@@ -49,22 +49,69 @@ h1, h2, h3, h4, h5, h6 {
 
 /* code */
 
+:root {
+  font-family: 'Roboto';
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  filter: invert(1);
+}
+
 .content {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
+  display: grid;
+  grid-template-rows: 70px 230px 110px;
+  grid-gap: 50px;
   grid-row: 1 / 3;
   background-color: #0085ca;
+  color: white;
+}
+
+.logo,
+.sidebar-main-list,
+.sidebar-secondary-list {
+  padding-left: 20px;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 20px calc(100% - 60px);
+  font-weight: bold;
+}
+
+.logo {
+  padding-top: 15px;
+  padding-left: 15px;
+  grid-template-columns: 40px calc(100% - 80px);
+}
+
+.logo > *,
+.sidebar-main-list > *,
+.sidebar-secondary-list > * {
+  align-self: center;
+}
+
+.logo > p {
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+
+.sidebar-main-list > p,
+.sidebar-secondary-list  > p {
+  font-size: 1.2rem;
 }
 
 .header {
-  height: 18vh;
   background-color: white;
 }
 
 .main-content {
-  height: 82vh;
   background-color: #e3ebf2;
 }
