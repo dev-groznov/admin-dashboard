@@ -54,6 +54,7 @@ h1, p, h3, h4, h5, h6 {
 }
 
 a {
+  width: max-content;
   text-decoration: none;
   color: inherit;
   vertical-align: middle;
@@ -104,7 +105,7 @@ a {
 
 .logo > a {
   font-weight: bolder;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .sidebar-main-list > a,
@@ -119,6 +120,8 @@ a {
   grid-template-rows: 60px 80px;
   padding: 15px 40px 10px 35px;
   background-color: white;
+  position: relative;
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 10%);
 }
 
 .search {
@@ -170,7 +173,7 @@ a {
 
 .name {
   align-self: start;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .actions {
@@ -215,11 +218,12 @@ a {
   background-color: white;
   border-left: 8px solid orange;
   border-radius: 8px;
+  box-shadow: 2px 5px 5px rgb(0, 0, 0, 10%);
 }
 
 .card-text > p:first-child {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .card-text > p:last-child {
@@ -254,12 +258,67 @@ a {
   background-image: url(design/source-fork.svg);
 }
 
+.announcements {
+  box-shadow: 2px 5px 5px rgb(0, 0, 0, 10%);
+}
+
+.examples-announcements {
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.site-maintenance,
+.community-share-day {
+  padding-bottom: 15px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.community-share-day,
+.updated-privacy-policy {
+  padding-top: 15px;
+}
+
+.example > p:first-child {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.example > p:last-child {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.title-trending {
+  margin-top: 10px
+}
+
+.developers {
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  display: grid;
+  grid-gap: 25px;
+  box-shadow: 2px 5px 5px rgb(0, 0, 0, 10%);
+}
+
+.develop {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-gap: 15px;
+}
+
+.tag-and-description > p:last-child {
+  color: gray;
+}
+
 .title {
   font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
+
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
