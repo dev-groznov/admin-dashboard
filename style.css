@@ -258,14 +258,11 @@ a {
   background-image: url(design/source-fork.svg);
 }
 
-.announcements {
-  box-shadow: 2px 5px 5px rgb(0, 0, 0, 10%);
-}
-
 .examples-announcements {
   padding: 30px;
   background-color: white;
   border-radius: 8px;
+  box-shadow: 2px 5px 5px rgb(0, 0, 0, 10%);
 }
 
 .site-maintenance,
